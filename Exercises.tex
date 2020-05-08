@@ -1,0 +1,122 @@
+\documentclass[12pt,a4paper]{article}
+
+
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+\makeatletter
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+			{\descriptionlabel{#1}}
+		\hspace{\labelsep}%
+\else
+	\ifnum\enit@type=\z@
+			\refstepcounter{\@listctr}\fi
+		\quad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+\parindent=0pt
+
+\newtheorem{theorem}{قضیه}[section]
+\newtheorem{definition}{تعریف}
+
+\usepackage{xepersian}
+\settextfont[Scale=1]{B Nazanin+ Regular}
+\setdigitfont[Scale=1]{B Nazanin+ Regular}
+\setlatintextfont{Calibri}
+\baselineskip=0.5cm
+
+\newcommand{\ن}{‌}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+	\maketitle{}
+	\section{تمارین سری یک}
+	\begin{enumerate}
+	\item
+برنامه‌ای بنویسید که ۳ ورودی از کاربر بگیرد و آنها را بر حسب بزرگتری مرتب کند.
+	\item
+	تابعی بنویسید که عددی صحیحی بگیرد و فاکتوریل آن را حساب کند.
+	\item 
+	برنامه‌ای بنویسید که یک عدد باینری بگیرد و آن را به صورت ده دهی نشان دهد.
+	\item
+	برنامه‌ای بنویسید که نام و نام‌خانوادگی و سال تولد کاربر را بگیرد و به او بگویید که چند سال اش است.\\ (نام + نام‌خاموادگی + <سن> + سال سن دارد)
+	\item 
+	تابعی بنویسید که nامین عدد اول را برگرداند.
+	\item
+	برنامه‌ای بنویسید که جمع فاکتوریل تمام عداد کمتر از n را برگرداند.
+	\item 
+	برنامه‌ای بنویسید که جمع لگاریتم nتا عدد اول را برمیگرداند. 
+	\end{enumerate}
+	\section{تمارین سری دوم}
+	\begin{enumerate}
+	\item 
+	برنامه‌ای بنویسید که تعداد رشته‌های bob داخل یک رشته را بدست بیاورد.
+	\item
+	توابعی به نویسید که بتوان با آن برداشن و واریزها با توجه به مالیات( ۰.۰۵ درصد) افزوده بر آن حساب کند.
+	\item
+	 اگر در تمرین قبل اگر در یک سال حسابی با ۵۰۰۰ پول داشته باشیم و سود ماهیانه 1.5 درصد باشد و ماهی ۲ درصد در از حساب برداشت کرده باشیم و قبل از اتمام ماه آخر ۱۰۰۰ هم به حسابمان وارد شده باشد، آخر سال چه قدر پول در حسابمان باقی می ماند؟
+	 \item 
+	 تابعی بنویسید که لیستی دو بعدی را بگیرد و متقارن یا نامتقارن بودن آن را مشخص کند
+
+	\item
+	لیستی از اسامی دانشگاه‌ها، تعداد پذیرفته شدگان و هزینه زندگی یک دانشجو وجود دارد،
+	برنامه‌ای بنویسید که تعداد دانشجویان هر دانشگاه و هزینه آنها را به علاوه تعداد کل و هزینه کل نمایش دهد.\\
+	\begin{latin}
+	\lr{usa\_univs =}\\
+ \lr{[ [`California Institute of Technology',2175,37704],}\\
+ \lr{[`Harvard',19627,39849],}\\
+ \lr{[`Massachusetts Institute of Technology',10566,40732],}\\
+ \lr{[`Princeton',7802,37000],}\\
+ \lr{[`Rice',5879,35551],}\\
+ \lr{[`Stanford',19535,40569],}\\
+ \lr{[`Yale',11701,40500]]}
+ \end{latin}
+ \item 
+ برنامه‌ای بنویسید که یک لیست از اعداد را بگیرد و بزرگترین، میانگین و ضرب آنها را بنویسید.
+ \item 
+ برنامه‌ای بنویسید که یک عدد اعشاری بگیرد و تعداد ارقام صحیح آن را بنویسد.
+ \item
+ برنامه‌ای بنویسید که تعداد حروف صدا دار یک رشته را بگوید.
+	\end{enumerate}
+\section{تمارین سری سوم}
+\begin{enumerate}
+\item
+برنامه‌ای برای بازی ۲۰ سوالی بنویسید.
+\begin{latin}
+\lr{words=}\\
+\lr{[`after',`afternoon',`ball',`book',`clock',`computer',`door',`duck',`first',`girl',`glass',`hello',}\\
+\lr{`human',`mathematics',`minute`,`monkey',`morning',`pen',`physics',`quick',`school',`second',}\\
+\lr{`student',`table',``teacher'', `tree',`university',`woman',`world',`zoo']}
+\end{latin}
+\item
+تابعی بنویسید که یک چندجمله‌ای بگیرد و مشتق آن را برگرداند.
+\end{enumerate}
+\section{تمارین سری چهارم}
+\begin{enumerate}
+
+\item
+برنامه‌ای بنویسید که بزرگترین زیررشته از یک رشته که برحسب حروف‌الفبا است را به ما برگرداند.
+\item
+بازی ۲۰ با خواندن تکستی از لغات بنویسید.
+\item 
+برنامه‌ای بنویسید که کاربر به شما زمانی بده و شما آن را به حسب ثانیه برگردانید.
+\item
+کلاسی طرحی کنید که سیستم رمز سزار و سیستم پیشرفته رمز سزار را در آن اجرا شود.
+
+\end{enumerate}
+
+\section{تمارین سری پنجم}
+\begin{enumerate}
+\item
+برنامه‌ای بنویسید که یک ماتریس بگیرد و به روش اشلون وارون آن را پیدا کند.
+\item
+
+\end{enumerate}
+
+
+	
+
+\end{document}
